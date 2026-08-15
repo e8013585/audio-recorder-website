@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Audio Recorder</title>
+<meta name="description" content="Privacy policy for the Audio Recorder Android app. Recordings stay on your device; there is no tracking, advertising or account.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23ef4444'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
+<link rel="stylesheet" href="site.css">
+<script src="site.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="dot"></span><span data-site="appName">Audio Recorder</span></a>
+    <nav class="site">
+      <a href="index.html">Home</a>
+      <a href="index.html#features" class="hide-sm">Features</a>
+    </nav>
+    <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+
+<section>
+  <div class="wrap prose">
+    <h1 style="font-size:clamp(28px,4vw,40px);letter-spacing:-0.02em;margin:0 0 8px;">Privacy Policy</h1>
+    <p style="margin-top:0;">
+      For the <span data-site="appName">Audio Recorder</span> Android application.<br>
+      Last updated: <span data-site="policyUpdated">2026-08-15</span>
+    </p>
+
+    <div class="note">
+      <p>
+        <strong>In short:</strong> your recordings stay on your device. This app has no
+        accounts and no analytics, and it never uploads your audio anywhere. Three
+        things do involve a third party, and each is described below: the app shows a
+        banner advert served by Google, optional location tagging uses Google's location
+        and place-name services, and Android's own backup can copy the app's settings and
+        recording list to your Google account.
+      </p>
+    </div>
+
+    <h2>Who we are</h2>
+    <p>
+      This application is developed by <strong data-site="developer">Hasan B. &amp; Levent B.</strong>
+      ("we", "us"). If you have questions about this policy, contact us at
+      <a data-site-mail href="mailto:" style="color:var(--accent);"></a>.
+    </p>
+
+    <h2>Information we collect</h2>
+    <p>
+      <strong>We do not collect any personal information, and we never collect your
+      recordings.</strong> We operate no servers that receive your data, and the app
+      contains no analytics or crash reporting libraries.
+    </p>
+    <p>
+      The app does show advertising, which is provided by Google AdMob. Google receives
+      some device information in order to serve those ads, and the consent service that
+      decides whether a consent form is needed is contacted when the app starts. That is
+      described in <a href="#advertising" style="color:var(--accent);">Advertising</a>
+      below. <strong>Your recordings are never used for advertising and are never
+      uploaded.</strong>
+    </p>
+    <p>
+      Two other features involve data leaving your device, both covered in their own
+      sections: <a href="#location" style="color:var(--accent);">location tagging</a>,
+      which asks Google's services to turn your coordinates into a place name, and
+      <a href="#backup" style="color:var(--accent);">Android's backup system</a>, which
+      can copy the app's settings and recording list to your own Google account.
+    </p>
+    <p>
+      Everything the app creates is stored on your device:
+    </p>
+    <ul>
+      <li><strong>Audio recordings</strong>, saved to your device's Recordings folder.</li>
+      <li><strong>Recording details</strong> such as name, duration, size, format and waveform, held in a database on your device.</li>
+      <li><strong>Your settings</strong>, including audio preferences, appearance and language.</li>
+      <li><strong>An optional PIN</strong>, stored only as a salted cryptographic hash in encrypted storage. It is never stored as readable text and cannot be recovered from the device.</li>
+      <li><strong>A place name</strong> for the start and end of each recording, if location tagging is on and you have granted the location permission.</li>
+    </ul>
+    <p>
+      Uninstalling the app removes its database and settings from the device. Recordings
+      saved to the shared Recordings folder remain on your device unless you delete them,
+      and any copy Android has already placed in your Google account backup is removed
+      through your Google account rather than by uninstalling — see
+      <a href="#backup" style="color:var(--accent);">Backup and device transfer</a>.
+    </p>
+
+    <h2>Permissions and why they are needed</h2>
+    <table class="spec permissions" style="margin:16px 0;">
+      <tbody>
+        <tr><th>Microphone</th><td>Required to record audio. Used only while you are recording.</td></tr>
+        <tr><th>Notifications</th><td>To show the recording and playback controls while the app runs in the background.</td></tr>
+        <tr><th>Approximate location</th><td>Optional. The location tagging setting is <strong>on by default</strong>, so the app asks for this permission the first time you record; if you decline, or turn the setting off in Settings, no location is ever requested. When it is on, the app takes a coarse fix at the start and end of a recording and stores a place name such as "Leeds, United Kingdom" with it. See <a href="#location" style="color:var(--accent);">Location tagging</a> for what this involves.</td></tr>
+        <tr><th>Phone state</th><td>Optional, requested only if you enable pausing or stopping when a call arrives. It is used solely to detect that a call is in progress. We do not read your phone number, contacts or call history.</td></tr>
+        <tr><th>Bluetooth</th><td>Optional, to record from a connected Bluetooth microphone.</td></tr>
+        <tr><th>Biometrics</th><td>Optional, used only if you turn on the app lock, so your device can check your fingerprint or face. The check is performed by Android; the app receives only a pass or fail and never sees biometric data.</td></tr>
+        <tr><th>Network and Wi-Fi state</th><td>To find the device's local address for the Wi-Fi file server, and to load adverts.</td></tr>
+        <tr><th>Advertising ID</th><td>Used by Google AdMob to serve adverts, as described under Advertising. You can reset or delete this identifier in your device settings at any time.</td></tr>
+        <tr><th>Ad services</th><td>Added by Google's ads SDK for Android's Privacy Sandbox (Topics and attribution). Controlled from your device's own advert settings.</td></tr>
+        <tr><th>Storage / media audio</th><td>To save recordings where your other apps can see them, and to read them back for playback and editing.</td></tr>
+        <tr><th>Modify audio settings</th><td>Used for audio routing between the microphone, speaker and any connected headset. It grants no access to any of your data.</td></tr>
+        <tr><th>Wake lock</th><td>To keep recording reliably while the screen is off.</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="location">Location tagging</h2>
+    <p>
+      When location tagging is on, the app records an approximate place name at the start
+      and end of each recording. Two steps are involved, and you should know that neither
+      is purely on-device:
+    </p>
+    <ul>
+      <li>
+        The coarse position comes from <strong>Google Play services' location provider</strong>,
+        which may use nearby Wi-Fi networks and mobile masts, and Google's network location
+        service, to work out where the device is.
+      </li>
+      <li>
+        Those coordinates are then turned into a place name by <strong>Android's geocoding
+        service</strong>, which on most phones is provided by Google and requires a network
+        connection. In other words, your approximate coordinates are sent to Google to get
+        the name back.
+      </li>
+    </ul>
+    <p>
+      Only the resulting text — a city and country or US state — is kept, in the app's local
+      database. <strong>Latitude and longitude are never stored, and nothing about your
+      location is sent to us.</strong> Google's handling of what it receives is covered by the
+      <a href="https://policies.google.com/privacy" style="color:var(--accent);">Google Privacy Policy</a>.
+    </p>
+    <p>
+      Location tagging is on by default in the app's settings, but it can do nothing until
+      you grant the location permission, which the app asks for the first time you record.
+      Declining that prompt, or turning the setting off under
+      <strong>Settings &rarr; Recording</strong>, stops all of the above. Place names already
+      saved with earlier recordings stay until you delete those recordings.
+    </p>
+
+    <h2 id="backup">Backup and device transfer</h2>
+    <p>
+      The app takes part in Android's standard backup system, which is a feature of your
+      device and your Google account rather than a service of ours. If you have backup
+      enabled in your Android settings, Android may copy the following to your Google
+      account, and will copy it during a device-to-device transfer:
+    </p>
+    <ul>
+      <li>Your app settings and preferences.</li>
+      <li>The recordings database — names, dates, durations, formats, waveforms and any place names. This is information <em>about</em> your recordings, not the audio.</li>
+    </ul>
+    <p>
+      <strong>Audio files are not part of this.</strong> They live in the shared Recordings
+      folder, which the app's backup rules do not include. <strong>Your PIN and the file
+      server's credentials are explicitly excluded</strong> from both backup and device
+      transfer.
+    </p>
+    <p>
+      This data goes to your own Google account, not to us; we cannot see it. Android
+      backups are encrypted, and on recent versions are protected by your device's PIN or
+      passcode. You can turn backup off, or delete an existing backup, in your device's
+      settings under <strong>Google &rarr; Backup</strong>.
+    </p>
+
+    <h2>The Wi-Fi file server</h2>
+    <p>
+      The app includes an optional server that lets you browse and download your recordings
+      from a web browser on the same local network. It is <strong>off by default</strong> and
+      runs only while you switch it on. It is <strong>read-only</strong>: it can list your
+      recordings and send you a copy of one, and there is no way to upload, rename or delete
+      anything through it. It is reachable only from your local network — it does not expose
+      anything to the internet, and no recording is sent to us or to any third party.
+    </p>
+    <p>
+      Access requires a username and password that the app generates randomly and stores in
+      encrypted storage. Be aware that the connection is <strong>ordinary HTTP, not
+      HTTPS</strong>: the credentials and the audio are not encrypted in transit, so anyone
+      able to observe traffic on that network could read them. Only enable the server on
+      networks you trust, and switch it off when you have finished.
+    </p>
+
+    <h2 id="advertising">Advertising</h2>
+    <p>
+      The app displays a single banner advert. Adverts are served by
+      <a href="https://policies.google.com/technologies/partner-sites" style="color:var(--accent);">Google AdMob</a>,
+      and Google acts as an independent data controller for what it collects. To serve
+      adverts, Google may receive:
+    </p>
+    <ul>
+      <li>Your device's <strong>advertising ID</strong>, a resettable identifier you control in your device settings.</li>
+      <li>Standard technical information such as device model, operating system version, coarse region and IP address.</li>
+      <li>Whether an advert was shown, viewed or tapped.</li>
+      <li>
+        On devices that support Android's Privacy Sandbox, the ads SDK may also use the
+        system's <strong>Topics</strong> and <strong>attribution</strong> services. These
+        are Android features: the topics are worked out by your device from your app
+        usage generally, not by this app, and you can review or disable them in your
+        device's settings under Privacy &rarr; Ads.
+      </li>
+    </ul>
+    <p>
+      <strong>We do not send Google your recordings, file names, transcripts, location
+      tags, or anything else the app stores.</strong> We receive only aggregate,
+      anonymous performance figures, and we cannot identify you from them.
+    </p>
+    <p>
+      If you are in the European Economic Area, the United Kingdom or Switzerland, the
+      app asks for your consent before any personalised advert is requested, and no
+      advert is loaded until you have answered. You can change your answer at any time
+      from <strong>Settings &rarr; Ads &rarr; Ad privacy choices</strong>; that entry is
+      shown only where a consent choice applies, so you will not see it in regions where
+      Google reports that none is required.
+    </p>
+    <p>
+      Handling consent means the app contacts Google's User Messaging Platform when it
+      starts, to find out whether a form is needed and what you have already answered.
+      That request happens before any advert is loaded and tells Google only what it
+      needs for that decision, such as the app's identifier and the region your
+      connection appears to come from. If it cannot reach that service, the app loads no
+      adverts at all rather than guessing at your choice.
+    </p>
+    <p>
+      You can reset or delete your advertising ID from your device's settings, under
+      Privacy or Google &rarr; Ads. Deleting it stops adverts from being personalised.
+      Google's own handling of this data is covered by the
+      <a href="https://policies.google.com/privacy" style="color:var(--accent);">Google Privacy Policy</a>.
+    </p>
+
+    <h2>Sharing</h2>
+    <p>
+      We do not sell your information, and we cannot share what we never receive. The one
+      thing that is shared is the advertising identifier described above, which the ads
+      SDK sends to Google; Google is an independent controller for it. Nothing else — no
+      audio, no file names, no place names, no settings — is shared with anyone.
+    </p>
+    <p>
+      When you use the share function, your recording is passed to whichever app you
+      choose, and that app's own privacy policy then applies to it. The same is true of
+      anything you copy off the device yourself through the Wi-Fi server.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      The app is not directed at children under 13. Because we collect no personal
+      information from anyone, we do not knowingly collect it from children.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      Recordings are written to your device's storage and are protected by your device's
+      own security. The optional app lock adds a PIN or biometric check on top. PINs are
+      salted and hashed with PBKDF2 (65,536 iterations) and kept in encrypted storage,
+      along with the Wi-Fi server's credentials; neither is included in any backup. A PIN
+      cannot be recovered from the device, so if you forget it you will need to clear the
+      app's data.
+    </p>
+    <p>
+      The app lock protects the app's own screens. It does not encrypt the audio files
+      themselves, which remain readable to anything else on your device with storage
+      access.
+    </p>
+
+    <h2>Your rights and choices</h2>
+    <p>
+      You are in control of everything the app stores: delete individual recordings from
+      the list, turn location tagging off at any time under
+      <strong>Settings &rarr; Recording</strong>, revoke the location or microphone
+      permission in Android's settings, remove your PIN in settings, turn the Wi-Fi
+      server off, change your advertising consent where that choice applies, disable
+      Android backup for the app, or uninstall the app to remove its data from the
+      device. Since we hold no data about you, there is nothing for you to request from
+      us; requests about data held by Google should go to Google.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes, we will update the date at the top of this page and publish
+      the revised version here.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      <a data-site-mail href="mailto:" style="color:var(--accent);"></a>
+    </p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-row">
+    <div>
+      <strong data-site="appName">Audio Recorder</strong> ·
+      built by <span data-site="developer">Hasan B. &amp; Levent B.</span><br>
+      © <span data-year>2026</span> <span data-site="developer">Hasan B. &amp; Levent B.</span>. All rights reserved.
+    </div>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a data-site-mail href="mailto:">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

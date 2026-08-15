@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audio Recorder — a precise, private voice recorder for Android</title>
+<meta name="description" content="A voice recorder for Android with ten audio formats, a precise waveform, trimming and format conversion, PIN and biometric lock, and no accounts or analytics. Recordings stay on your device.">
+<meta property="og:title" content="Audio Recorder for Android">
+<meta property="og:description" content="Ten formats, a precise waveform, on-device editing, and recordings that never leave your phone.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23ef4444'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
+<link rel="stylesheet" href="site.css">
+<script src="site.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="dot"></span><span data-site="appName">Audio Recorder</span></a>
+    <nav class="site">
+      <a href="#features">Features</a>
+      <a href="#formats" class="hide-sm">Formats</a>
+      <a href="#privacy">Privacy</a>
+      <a href="privacy.html" class="hide-sm">Policy</a>
+    </nav>
+    <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="pill">Version <span data-site="version">1.0.0</span> · Android 9 and later</span>
+    <h1>A recorder that tells you <br class="br-lg">exactly what it captured.</h1>
+    <p class="lede">
+      Ten audio formats, a waveform drawn at one line per pixel, and settings that
+      actually change the file on disk. No accounts, no analytics, and your recordings
+      never leave your device.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" data-store-button>Get it on Google Play</a>
+      <a class="btn btn-ghost" href="#features">See what it does</a>
+    </div>
+
+    <div class="wave-strip" role="img" aria-label="Illustration of an audio waveform with a time scale">
+      <svg viewBox="0 0 900 132" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" opacity="0.12">
+          <line x1="150" y1="14" x2="150" y2="118"/>
+          <line x1="300" y1="14" x2="300" y2="118"/>
+          <line x1="450" y1="14" x2="450" y2="118"/>
+          <line x1="600" y1="14" x2="600" y2="118"/>
+          <line x1="750" y1="14" x2="750" y2="118"/>
+        </g>
+        <line x1="0" y1="66" x2="900" y2="66" stroke="currentColor" opacity="0.18"/>
+        <g id="wave" stroke="#22c55e" stroke-width="1" shape-rendering="crispEdges"></g>
+        <line x1="450" y1="14" x2="450" y2="118" stroke="#ef4444" stroke-width="1.5"/>
+        <g fill="currentColor" opacity="0.55" font-size="9"
+           font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+          <text x="132" y="10">00:02</text><text x="282" y="10">00:04</text>
+          <text x="432" y="10">00:06</text><text x="582" y="10">00:08</text>
+          <text x="732" y="10">00:10</text>
+          <text x="132" y="129">00:02</text><text x="282" y="129">00:04</text>
+          <text x="432" y="129">00:06</text><text x="582" y="129">00:08</text>
+          <text x="732" y="129">00:10</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>Built for people who care about the recording</h2>
+    <p class="section-lede">
+      Every control here changes the audio that lands on your device — nothing is
+      decorative.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="ico">🎚️</div>
+        <h3>Ten formats, properly</h3>
+        <p>
+          WAV in 16-bit or 32-bit float, FLAC, MP3, M4A, AAC, OGG, Opus, AMR and 3GP.
+          Sample rate up to 96 kHz and bit rate up to 320 kbps, with only the values
+          each format genuinely supports offered.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">📈</div>
+        <h3>A waveform you can read</h3>
+        <p>
+          Drawn one hairline per pixel with a time scale above and below, so the peaks
+          line up with the moments that made them. Colour and grid are yours to set.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">🔇</div>
+        <h3>Skip silence and voice activation</h3>
+        <p>
+          Drop silent stretches as you record, or capture only while someone is
+          speaking. Both have adjustable thresholds, and the timer counts only what
+          was kept.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">✂️</div>
+        <h3>Trim, fade and convert</h3>
+        <p>
+          Edit on the device. Trimming copies the stream rather than re-encoding, so a
+          320 kbps file stays 320 kbps. Convert between any of the supported formats.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">🎙️</div>
+        <h3>Real capture controls</h3>
+        <p>
+          Gain from −30 to +30 dB, noise suppression, automatic gain control,
+          microphone selection and direction, mono or stereo, and monitoring through
+          headphones while you record.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">📞</div>
+        <h3>Survives real life</h3>
+        <p>
+          Pause or stop automatically on an incoming call. Recordings are written to
+          private storage first and recovered after a crash, so an interrupted session
+          is not a lost one.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">🔒</div>
+        <h3>Locked to you</h3>
+        <p>
+          Optional PIN or biometric unlock, re-armed whenever the app leaves the
+          screen. PINs are salted and hashed, never stored as text.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">🌐</div>
+        <h3>Copy files over Wi-Fi</h3>
+        <p>
+          Turn on the built-in server and download recordings from a browser on the
+          same network. Password protected, and off unless you start it.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico">🏷️</div>
+        <h3>Names that make sense</h3>
+        <p>
+          Build the filename from the parts you want — date, time, milliseconds,
+          prefix — in the order you want, in your own time zone. Rename on save if you
+          prefer.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="formats">
+  <div class="wrap">
+    <h2>Specifications</h2>
+    <p class="section-lede">What the app supports, in full.</p>
+    <div class="table-scroll">
+      <table class="spec">
+        <tbody>
+          <tr>
+            <th>Formats</th>
+            <td>WAV (16-bit PCM), WAV (32-bit float), FLAC, MP3, M4A (AAC), AAC, OGG (Vorbis), Opus, AMR, 3GP</td>
+          </tr>
+          <tr>
+            <th>Sample rates</th>
+            <td>8, 11.025, 12, 16, 22.05, 24, 32, 44.1, 48 and 96 kHz, filtered to what the chosen format supports</td>
+          </tr>
+          <tr>
+            <th>Bit rates</th>
+            <td>8–320 kbps for compressed formats. Lossless formats report their measured rate instead</td>
+          </tr>
+          <tr>
+            <th>Channels</th>
+            <td>Mono or stereo</td>
+          </tr>
+          <tr>
+            <th>Microphone</th>
+            <td>Default, camcorder, voice recognition, unprocessed or voice-communication source; front, rear or external direction; Bluetooth headset input</td>
+          </tr>
+          <tr>
+            <th>Processing</th>
+            <td>Gain −30 to +30 dB, noise suppression, automatic gain control, silence skipping, voice activation</td>
+          </tr>
+          <tr>
+            <th>Editing</th>
+            <td>Trim, fade in, fade out, format conversion</td>
+          </tr>
+          <tr>
+            <th>Playback</th>
+            <td>Variable speed, ten-second skips, seek by tapping the waveform, background playback with notification controls</td>
+          </tr>
+          <tr>
+            <th>Organisation</th>
+            <td>Search, rename, share, delete, audio profiles you can save and reload</td>
+          </tr>
+          <tr>
+            <th>Interface</th>
+            <td>Light, dark or system theme, Material You dynamic colour, two design styles, home-screen recording widget</td>
+          </tr>
+          <tr>
+            <th>Languages</th>
+            <td>125 languages, plus 18 numbering systems including Eastern Arabic, Devanagari, Thai, Bengali, Tamil and Khmer</td>
+          </tr>
+          <tr>
+            <th>Saved to</th>
+            <td><code>Recordings/Audio Recorder/</code>, sorted by year, visible to your other apps</td>
+          </tr>
+          <tr>
+            <th>Requires</th>
+            <td>Android 9.0 (API 28) or later</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:22px;color:var(--ink-soft);font-size:14px;">
+      Translations beyond English are still being completed.
+    </p>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>Your recordings stay on your device</h2>
+    <p class="section-lede">
+      This is the whole story, and the
+      <a href="privacy.html" style="color:var(--accent);">privacy policy</a> says the
+      same thing at greater length.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="ico">🚫</div>
+        <h3>No accounts, no analytics</h3>
+        <p>
+          There is no sign-in, and no analytics or crash-reporting libraries of any kind.
+          The app is free and carries one banner advert, served by Google AdMob; in the
+          EEA, the UK and Switzerland it asks your consent first, and nothing about your
+          recordings is ever used for it.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico">📴</div>
+        <h3>Your audio is never uploaded</h3>
+        <p>
+          Recordings are never sent anywhere. The only way one leaves your phone is if
+          you share it yourself, or switch on the Wi-Fi server, which serves files on
+          your local network and nowhere else.
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico">📍</div>
+        <h3>Location is a city name, and yours to turn off</h3>
+        <p>
+          Location tagging stores a place name like "Leeds, United Kingdom" with a
+          recording — never coordinates. It is on by default, so the app asks for the
+          permission on your first recording; decline it, or switch the setting off, and
+          no location is requested again.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-row">
+    <div>
+      <strong data-site="appName">Audio Recorder</strong> ·
+      built by <span data-site="developer">Hasan B. &amp; Levent B.</span><br>
+      © <span data-year>2026</span> <span data-site="developer">Hasan B. &amp; Levent B.</span>. All rights reserved.
+    </div>
+    <div class="foot-links">
+      <a href="privacy.html">Privacy policy</a>
+      <a data-site-mail href="mailto:">Contact</a>
+      <a href="#features">Features</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Draws the hero waveform: a dense min/max trace, square ended, matching how the
+   app renders one hairline per pixel column. */
+(function () {
+  const g = document.getElementById("wave");
+  if (!g) return;
+  const W = 900, mid = 66, max = 46;
+  let out = "";
+  for (let x = 0; x < W; x += 2) {
+    const t = x / W;
+    const envelope =
+      Math.sin(t * Math.PI * 3.1) * 0.42 +
+      Math.sin(t * Math.PI * 11) * 0.2 +
+      Math.sin(t * Math.PI * 27) * 0.12 + 0.30;
+    const speech = Math.max(0.05, envelope) * (0.55 + 0.45 * Math.abs(Math.sin(t * Math.PI * 7)));
+    const noise = 0.55 + 0.45 * Math.sin(x * 12.9898) * Math.cos(x * 4.1414);
+    const h = Math.max(1, Math.min(max, speech * noise * max));
+    out += `<line x1="${x + 0.5}" y1="${(mid - h).toFixed(1)}" x2="${x + 0.5}" y2="${(mid + h).toFixed(1)}"/>`;
+  }
+  g.innerHTML = out;
+})();
+</script>
+
+</body>
+</html>
