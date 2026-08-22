@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="Audio Recorder">
+  <!--
+    A direct transcription of the Android launcher icon, so the site and the app
+    share one mark. Source of truth:
+      app/src/main/res/drawable/ic_launcher_background.xml
+      app/src/main/res/drawable/ic_launcher_foreground.xml
+
+    Background is RecordingRed (#EF4444) falling off to a deeper red, matching the
+    radial gradient in the adaptive icon: centre (54,45), radius 84.
+
+    Foreground is the same symmetric waveform of seven bars. They are stroked lines
+    with round caps rather than filled rects, which is what gives the ends their
+    radius; endpoints are inset by half the stroke width so the caps do not extend
+    past the intended height.
+
+    The launcher masks the adaptive icon to a circle, so the circular clip here is
+    what the icon actually looks like on a device.
+  -->
+  <defs>
+    <radialGradient id="bg" gradientUnits="userSpaceOnUse" cx="54" cy="45" r="84">
+      <stop offset="0" stop-color="#EF4444"/>
+      <stop offset="0.55" stop-color="#D32F2F"/>
+      <stop offset="1" stop-color="#B91C1C"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="54" cy="54" r="54" fill="url(#bg)"/>
+
+  <g stroke="#FFFFFF" stroke-width="3.14" stroke-linecap="round">
+    <line x1="35.14" y1="49.17" x2="35.14" y2="58.83"/>
+    <line x1="41.43" y1="43.84" x2="41.43" y2="64.16"/>
+    <line x1="47.71" y1="37.97" x2="47.71" y2="70.03"/>
+    <line x1="54.00" y1="35.57" x2="54.00" y2="72.43"/>
+    <line x1="60.29" y1="37.97" x2="60.29" y2="70.03"/>
+    <line x1="66.57" y1="43.84" x2="66.57" y2="64.16"/>
+    <line x1="72.86" y1="49.17" x2="72.86" y2="58.83"/>
+  </g>
+</svg>
