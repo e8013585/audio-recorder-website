@@ -10,14 +10,12 @@
  * ------------------------------------------------------------------------- */
 
 const SITE = {
-  // Shown in the footer, the About section and the copyright line. Must match
-  // DEVELOPER_NAME in SettingsViewModel.kt, which shows the same names in the app.
-  developer: "Hasan B. & Levent B.",
+  // Shown in the footer, the About section and the copyright line.
+  developer: "Hasan Bayramoglu",
 
   appName: "Audio Recorder",
   version: "1.0.0",
 
-  // Must match the mailto: address in SettingsViewModel.openSupportEmail().
   supportEmail: "hasan.bayramoglu.developer@gmail.com",
 
   // Leave as an empty string until the app is published. While it is empty the
@@ -28,7 +26,7 @@ const SITE = {
   homeUrl: "index.html",
 
   // Used in the privacy policy's "last updated" line. Format: YYYY-MM-DD.
-  policyUpdated: "2026-08-15"
+  policyUpdated: "2026-08-22"
 };
 
 /* --------------------------------------------------------------------------
@@ -56,7 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Store buttons: real link when a URL is configured, inert label when not.
+  // Badge buttons (data-store-badge) hold the Google Play artwork, so their
+  // contents are left alone — the "coming soon" wording goes in the note below
+  // them instead, and the badge itself is only dimmed.
   document.querySelectorAll("[data-store-button]").forEach((el) => {
+    const isBadge = el.hasAttribute("data-store-badge");
     if (SITE.playStoreUrl) {
       el.setAttribute("href", SITE.playStoreUrl);
       el.classList.remove("is-pending");
@@ -65,8 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
       el.removeAttribute("href");
       el.classList.add("is-pending");
       el.setAttribute("aria-disabled", "true");
-      el.textContent = "Coming soon to Google Play";
+      if (!isBadge) el.textContent = "Coming soon to Google Play";
     }
+  });
+
+  document.querySelectorAll("[data-store-note]").forEach((el) => {
+    el.hidden = Boolean(SITE.playStoreUrl);
   });
 
   document.querySelectorAll("[data-year]").forEach((el) => {
