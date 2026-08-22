@@ -141,18 +141,15 @@ Translations beyond English are still in progress.
 ## Notes before you publish
 
 **Privacy policy is mandatory.** The app requests microphone access, so Play requires a
-reachable privacy policy URL. `privacy.html` in this folder is ready to publish, and the
-app links to `https://e8013585.github.io/audio-recorder-website/privacy.html`, which is
-this site — so publishing this folder is all that is needed.
+reachable privacy policy URL. `privacy.html` in this folder is ready to publish. The app
+currently links to `https://e8013585.github.io/audio-recorder-privacy-policy/`, which is
+a different address from this site — either publish the policy there too, or change the
+link in `SettingsViewModel.openPrivacyPolicy()` to point at wherever you host it.
 
-**Data safety form.** ⚠️ Do **not** declare "No data collected". The app ships the Google
-Mobile Ads SDK, which uses the advertising ID, so the correct answer is that data *is*
-collected and shared: one data type, **Device or other IDs**, for advertising and for
-fraud prevention. `PLAY_ANSWERS.md` in the repository root has the full set of answers
-and the reasoning behind each; follow that file rather than this paragraph. What you
-should be ready to explain, if asked, is that microphone audio never leaves the device,
-that location is coarse and stored as a place name in the local database, and that phone
-state is used only to detect an active call.
+**Data safety form.** Declare "No data collected" and "No data shared". Be ready to
+explain, if asked, that microphone audio stays on the device, that approximate location
+is optional and stored locally, and that phone state is used only to detect an active
+call.
 
 **Permission declarations.** `READ_PHONE_STATE` and location are both optional features
 and Play may ask you to justify them. The honest answers: pausing or stopping a
