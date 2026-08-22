@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Audio Recorder — a precise, private voice recorder for Android</title>
-<meta name="description" content="A voice recorder for Android with ten audio formats, a precise waveform, trimming and format conversion, PIN and biometric lock, and no accounts or analytics. Recordings stay on your device.">
+<meta name="description" content="A voice recorder for Android with ten audio formats, a precise waveform, trimming and format conversion, PIN and biometric lock, and no ads or tracking.">
 <meta property="og:title" content="Audio Recorder for Android">
-<meta property="og:description" content="Ten formats, a precise waveform, on-device editing, and recordings that never leave your phone.">
+<meta property="og:description" content="Ten formats, a precise waveform, on-device editing, and no ads or tracking.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23ef4444'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="site.css">
 <script src="site.js"></script>
 </head>
@@ -16,7 +16,7 @@
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="index.html"><span class="dot"></span><span data-site="appName">Audio Recorder</span></a>
+    <a class="brand" href="index.html"><img class="dot" src="icon.svg" alt="" width="26" height="26"><span data-site="appName">Audio Recorder</span></a>
     <nav class="site">
       <a href="#features">Features</a>
       <a href="#formats" class="hide-sm">Formats</a>
@@ -30,19 +30,22 @@
 <section class="hero">
   <div class="wrap">
     <span class="pill">Version <span data-site="version">1.0.0</span> · Android 9 and later</span>
-    <h1>A recorder that tells you <br class="br-lg">exactly what it captured.</h1>
+    <h1>A recorder that tells you<br>exactly what it captured.</h1>
     <p class="lede">
       Ten audio formats, a waveform drawn at one line per pixel, and settings that
-      actually change the file on disk. No accounts, no analytics, and your recordings
-      never leave your device.
+      actually change the file on disk. No ads, no accounts, no tracking.
     </p>
     <div class="cta-row">
-      <a class="btn btn-primary" data-store-button>Get it on Google Play</a>
+      <a class="store-badge" data-store-button data-store-badge aria-label="Get it on Google Play">
+        <img src="get-it-on-google-play.png" width="270" height="80"
+             alt="Get it on Google Play">
+      </a>
       <a class="btn btn-ghost" href="#features">See what it does</a>
     </div>
+    <p class="cta-note" data-store-note hidden>Coming soon to Google Play</p>
 
     <div class="wave-strip" role="img" aria-label="Illustration of an audio waveform with a time scale">
-      <svg viewBox="0 0 900 132" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 900 132" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <g stroke="currentColor" opacity="0.12">
           <line x1="150" y1="14" x2="150" y2="118"/>
           <line x1="300" y1="14" x2="300" y2="118"/>
@@ -245,31 +248,27 @@
     <div class="grid">
       <div class="card">
         <div class="ico">🚫</div>
-        <h3>No accounts, no analytics</h3>
+        <h3>No accounts, no ads, no tracking</h3>
         <p>
-          There is no sign-in, and no analytics or crash-reporting libraries of any kind.
-          The app is free and carries one banner advert, served by Google AdMob; in the
-          EEA, the UK and Switzerland it asks your consent first, and nothing about your
-          recordings is ever used for it.
+          There is no sign-in, no advertising and no analytics of any kind. The app
+          contains no tracking libraries.
         </p>
       </div>
       <div class="card">
         <div class="ico">📴</div>
-        <h3>Your audio is never uploaded</h3>
+        <h3>Nothing is uploaded</h3>
         <p>
-          Recordings are never sent anywhere. The only way one leaves your phone is if
-          you share it yourself, or switch on the Wi-Fi server, which serves files on
-          your local network and nowhere else.
+          Recordings are never sent anywhere. The only network feature is the Wi-Fi
+          server you switch on yourself, which serves files on your local network and
+          nowhere else.
         </p>
       </div>
       <div class="card">
         <div class="ico">📍</div>
-        <h3>Location is a city name, and yours to turn off</h3>
+        <h3>Location is optional</h3>
         <p>
-          Location tagging stores a place name like "Leeds, United Kingdom" with a
-          recording — never coordinates. It is on by default, so the app asks for the
-          permission on your first recording; decline it, or switch the setting off, and
-          no location is requested again.
+          If you enable location tagging, an approximate place name is stored with the
+          recording on your device. Leave it off and no location is ever requested.
         </p>
       </div>
     </div>
@@ -280,8 +279,8 @@
   <div class="wrap foot-row">
     <div>
       <strong data-site="appName">Audio Recorder</strong> ·
-      built by <span data-site="developer">Hasan B. &amp; Levent B.</span><br>
-      © <span data-year>2026</span> <span data-site="developer">Hasan B. &amp; Levent B.</span>. All rights reserved.
+      built by <span data-site="developer">Hasan Bayramoglu</span><br>
+      © <span data-year>2026</span> <span data-site="developer">Hasan Bayramoglu</span>. All rights reserved.
     </div>
     <div class="foot-links">
       <a href="privacy.html">Privacy policy</a>
