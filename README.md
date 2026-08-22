@@ -8,6 +8,7 @@ index.html               landing page
 privacy.html             privacy policy
 site.css                 styles (light + dark)
 site.js                  configuration + wiring
+icon.svg                 app icon, used as the favicon and the header mark
 .nojekyll                tells GitHub Pages to serve the files as-is
 play-store-listing.md    store copy, not part of the site
 ```
@@ -18,7 +19,7 @@ Open `site.js` and edit the `SITE` object at the top. One change updates both pa
 
 ```js
 const SITE = {
-  developer: "Hasan B. & Levent B.",  // footers, About, copyright
+  developer: "Hasan Bayramoglu",  // footers, About, copyright
   appName: "Audio Recorder",
   version: "1.0.0",
   supportEmail: "hasan.bayramoglu.developer@gmail.com",
