@@ -97,25 +97,19 @@ header.site {
   color: var(--ink);
   text-decoration: none;
   margin-right: auto;
-  white-space: nowrap; /* keeps the header one line on narrow phones */
 }
 
+/*
+  The brand mark is now the app's own launcher icon (icon.svg), a direct
+  transcription of the adaptive icon's vectors, so the site and the app agree.
+  It replaced a red circle with a white centre drawn here in CSS.
+*/
 .brand .dot {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: var(--red);
-  display: grid;
-  place-items: center;
   flex: none;
-}
-
-.brand .dot::after {
-  content: "";
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #fff;
+  display: block;
 }
 
 nav.site a {
@@ -130,18 +124,6 @@ nav.site a:hover { color: var(--ink); }
 @media (max-width: 700px) {
   nav.site a { margin-left: 14px; font-size: 13px; }
   nav.site a.hide-sm { display: none; }
-}
-
-@media (max-width: 460px) {
-  .brand { font-size: 15px; }
-  .brand .dot { width: 22px; height: 22px; }
-  nav.site { white-space: nowrap; }
-  nav.site a { margin-left: 12px; }
-}
-
-/* Line break that only applies once there is room for it. */
-@media (max-width: 640px) {
-  br.br-lg { display: none; }
 }
 
 .icon-btn {
@@ -196,6 +178,7 @@ nav.site a:hover { color: var(--ink); }
   display: flex;
   gap: 12px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -227,6 +210,40 @@ nav.site a:hover { color: var(--ink); }
 
 .btn-ghost:hover { border-color: var(--ink-soft); }
 
+/* ---------- Google Play badge ----------
+   The badge artwork may not be recoloured or redrawn, only scaled, so it keeps
+   its own black plate in both themes. Google asks for clear space around it of
+   at least a quarter of its height; the margin below provides that. */
+
+.store-badge {
+  display: inline-block;
+  line-height: 0;
+  margin: 0 4px;
+  border-radius: 8px;
+}
+
+.store-badge img {
+  display: block;
+  height: 52px;
+  width: auto;
+}
+
+.store-badge[href]:hover { opacity: 0.88; }
+
+.store-badge[href]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* No store URL configured yet: the badge stays visible but inert. */
+.store-badge.is-pending { opacity: 0.5; cursor: default; }
+
+.cta-note {
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
 /* ---------- waveform strip ---------- */
 
 .wave-strip {
@@ -239,9 +256,7 @@ nav.site a:hover { color: var(--ink); }
   overflow: hidden;
 }
 
-/* Scales by its own aspect ratio. Stretching it instead would squash the ruler
-   labels into illegibility on narrow screens. */
-.wave-strip svg { display: block; width: 100%; height: auto; }
+.wave-strip svg { display: block; width: 100%; height: 132px; }
 
 /* ---------- sections ---------- */
 
@@ -320,27 +335,6 @@ table.spec th {
 }
 
 table.spec td { color: var(--ink-soft); }
-
-/* On phones the two-column layout would force the page to scroll sideways, so the
-   rows stack: label above value. */
-@media (max-width: 560px) {
-  table.spec,
-  table.spec tbody,
-  table.spec tr,
-  table.spec th,
-  table.spec td {
-    display: block;
-    width: 100%;
-  }
-  table.spec { min-width: 0; }
-  table.spec tr { padding: 12px 0; border-bottom: 1px solid var(--line); }
-  table.spec th {
-    border-bottom: none;
-    padding: 0 0 3px;
-    white-space: normal;
-  }
-  table.spec td { border-bottom: none; padding: 0; }
-}
 
 /* ---------- prose (privacy page) ---------- */
 
