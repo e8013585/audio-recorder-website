@@ -19,7 +19,7 @@ Open `site.js` and edit the `SITE` object at the top. One change updates both pa
 
 ```js
 const SITE = {
-  developer: "Hasan Bayramoglu",  // footers, About, copyright
+  developer: "Hasan B. & Levent B.",  // footers, About, copyright
   appName: "Audio Recorder",
   version: "1.0.0",
   supportEmail: "hasan.bayramoglu.developer@gmail.com",
