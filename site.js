@@ -18,9 +18,9 @@ const SITE = {
 
   supportEmail: "hasan.bayramoglu.developer@gmail.com",
 
-  // Leave as an empty string until the app is published. While it is empty the
-  // download buttons render as a non-clickable "Coming soon to Google Play".
-  playStoreUrl: "",
+  // The Google Play listing. If this is ever emptied, the download buttons fall
+  // back to a non-clickable "Coming soon to Google Play".
+  playStoreUrl: "https://play.google.com/store/apps/details?id=com.eurotec.audiorecorder",
 
   privacyUrl: "privacy.html",
   homeUrl: "index.html",

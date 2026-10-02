@@ -23,7 +23,8 @@ const SITE = {
   appName: "Audio Recorder",
   version: "1.0.0",
   supportEmail: "hasan.bayramoglu.developer@gmail.com",
-  playStoreUrl: "",                   // empty -> buttons show "Coming soon"
+  // empty -> buttons show "Coming soon"
+  playStoreUrl: "https://play.google.com/store/apps/details?id=com.eurotec.audiorecorder",
   ...
 };
 ```
@@ -33,22 +34,32 @@ scripts are blocked. `site.js` overrides them at load, so editing it alone is en
 normal use — if you want the fallback text to match too, search the `.html` files for the
 old value.
 
-Once the app is live, paste its Play URL into `playStoreUrl`; the download buttons become
-real links automatically.
+The app is live on Google Play, and `playStoreUrl` holds its listing. The badge in
+`index.html` also carries the URL as a literal `href`, so it works without scripts; if
+the listing URL ever changes, update both.
 
 ## Publishing to GitHub Pages
 
-The intended address is `https://e8013585.github.io/audio-recorder-website/`, which means
-a repository named `audio-recorder-website`.
+The site is served at `https://e8013585.github.io/audio-recorder-website/` from the
+`main` branch of `https://github.com/e8013585/audio-recorder-website`, root folder
+(**Settings → Pages → Deploy from a branch**).
 
-1. Create that repository on GitHub.
-2. Copy the contents of this folder into its root — `index.html` must sit at the top
-   level, not inside a subfolder. Include the hidden `.nojekyll` file; without it Pages
-   runs the folder through Jekyll, which is needless here and can drop files whose names
-   begin with an underscore.
-3. In the repository, open **Settings → Pages**, set **Source** to *Deploy from a branch*,
-   pick your default branch and the `/ (root)` folder, and save.
-4. Wait a minute, then load the address above.
+This `website/` folder, inside the Android project, is a git clone of that repository —
+it is the only part of the project under version control. To publish a change, commit
+here and push:
+
+```
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+Pages redeploys within a minute or two. Keep `index.html` at the top level and keep the
+hidden `.nojekyll` file; without it Pages runs the folder through Jekyll, which is
+needless here and can drop files whose names begin with an underscore.
+
+If you edit a file on github.com instead, run `git pull` here before your next local
+change so the two copies don't diverge.
 
 ## About the privacy policy
 
