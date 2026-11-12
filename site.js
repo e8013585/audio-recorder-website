@@ -11,7 +11,7 @@
 
 const SITE = {
   // Shown in the footer, the About section and the copyright line.
-  developer: "Hasan B. & Levent B.",
+  developer: "Unpossible Apps",
 
   appName: "Audio Recorder",
   version: "1.0.0",
